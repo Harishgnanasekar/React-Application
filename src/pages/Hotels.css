@@ -1,0 +1,133 @@
+.hotels-page {
+  width: 100%;
+}
+
+.hotels-hero {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+  color: white;
+  padding: 4rem 20px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.hotels-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hotels-hero p {
+  font-size: 1.3rem;
+  opacity: 0.95;
+}
+
+.hotels-page > .container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-bottom: 3rem;
+}
+
+.filters-sidebar {
+  flex: 0 0 250px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  height: fit-content;
+  position: sticky;
+  top: 80px;
+}
+
+.filters-sidebar h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.filter-group {
+  margin-bottom: 2rem;
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.price-slider {
+  width: 100%;
+  cursor: pointer;
+}
+
+.favorites-info {
+  background-color: #ffe5e5;
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem;
+  border-radius: 4px;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.hotels-main {
+  flex: 1;
+}
+
+.hotels-count {
+  margin-bottom: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.hotels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.no-results {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  color: #666;
+}
+
+.no-results p:first-child {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .hotels-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hotels-page > .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .filters-sidebar {
+    flex: 0 0 auto;
+    position: relative;
+    top: auto;
+  }
+
+  .hotels-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
